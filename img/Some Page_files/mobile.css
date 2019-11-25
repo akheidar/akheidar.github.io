@@ -1,0 +1,83 @@
+body.mobileBG {
+  background-color: #ffffff;
+  background-image: none;
+}
+
+
+
+body.mobileBG .mobileAlign {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 3px 3px 10px #0f0f0f;
+}
+
+body.mobileBG .bgOverlay {
+  background-image: linear-gradient(rgba(36, 190, 255, 0.5), rgba(36, 190, 255, 0.5)), url('https://wallpapercave.com/wp/wp2061029.jpg');
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header.overlay {
+  background-image: linear-gradient(149.37deg, #00D1FF 24.32%, rgba(36, 0, 255, 0.5) 153.54%, rgba(36, 0, 255, 0.5) 153.55%);
+  background-position: top;
+  height: 98%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+img.logo {
+  --logoDim: 8vh;
+  position: absolute;
+  top: 7%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: var(--logoDim);
+  height: var(--logoDim);
+  opacity: 0;
+  animation: titleAppearMobile;
+  animation-duration: 0.5s;
+  animation-delay: 0.5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+h1.hero-mobile {
+  top: 25%;
+  font-size: 2.0em;
+}
+
+h1.hero {
+  animation: none;
+  opacity: 0;
+  animation: titleAppearMobile;
+  animation-duration: 0.5s;
+  animation-delay: 1.5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+form.loginMobile input.sbmt {
+    top: 12vh;
+    font-size: 1.3em;
+    --loginColor: #ffffff;
+    font-weight: medium;
+    background-color: var(--loginColor);
+    color: #1c1d29;
+    padding: 4% 10%;
+    cursor;
+}
+
+@keyframes titleAppearMobile {
+  0% {
+    opacity: 0;
+    font-size: 1.0em;
+  }
+
+  100% {
+    opacity: 1.0;
+      font-size: 2.0em;
+  }
+}

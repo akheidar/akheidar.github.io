@@ -1,0 +1,11 @@
+
+var logo = document.getElementsByClassName('animShift');
+var water = document.querySelector(".water");
+function shift() {
+  for(var i = 0; i < logo.length; i++) {
+    logo[i].classList.add("screenShift")
+    logo[i].style.transform = "translateX(-700px)";
+  }
+  water.classList.add("moveWater");
+  water.style.clipPath = "polygon(0 0, 100% 0, 100% 100%, 90% 50%, 80% 50%, 70% 50%, 60% 50%, 50% 50%, 40% 50%, 30% 50%, 20% 50%, 10% 50%, 0 50%)"
+}

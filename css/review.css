@@ -1,0 +1,42 @@
+.container-review {
+    color: var(--black);
+    margin: 3% 5%;
+    position: absolute;
+    top: 3%;
+    display: none;
+}
+
+.container-review .micro-copy {
+  color: var(--actionBlue);
+  font-weight: 400;
+}
+
+.container-review .questions .question {
+  position: relative;
+  width: 100%;
+  font-weight: bold;
+  font-size: 1.65em;
+  margin: 10% 0;
+}
+
+.container-review .questions .question .answer {
+  padding: 3% 0;
+  font-weight: 100;
+  font-size: 0.75em;
+}
+
+.container-review .submit-btn {
+  display: block;
+  background-color: var(--actionBlue);
+  border: none;
+  font-weight: lighter;
+  font-size: 1.5em;
+  padding: 3.5% 7%;
+  border-radius: 2.0em;
+  position: absolute;
+  left: 50%;
+  top: 120%;
+  transform: translateX(-50%);
+  color: #ffffff;
+  cursor: pointer;
+}

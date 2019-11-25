@@ -1,0 +1,37 @@
+<svg width="348" height="348" viewBox="0 0 348 348" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="174" cy="174" r="164" stroke="white" stroke-width="20"/>
+<path d="M194 213.5L222 192.5H230.5C232.709 192.5 234.5 194.291 234.5 196.5V199H243.5C245.709 199 247.5 200.791 247.5 203V208.5H258.5L270.5 218.5H289.5L296.442 222.286C298.582 223.454 299.189 226.248 297.726 228.198L271.7 262.9C270.945 263.907 269.759 264.5 268.5 264.5H160.128C158.798 264.5 157.554 263.839 156.811 262.735L131.202 224.735C129.412 222.079 131.315 218.5 134.519 218.5H140.5L151.237 213.832C151.74 213.613 152.283 213.5 152.832 213.5H194Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M127.5 177H92.3122C90.9364 177 89.9714 175.643 90.423 174.343L126.611 70.1932C127.351 68.0638 130.5 68.5954 130.5 70.8497V133L134.43 100.778C134.688 98.6623 137.634 98.3635 138.311 100.384L163.116 174.364C163.551 175.66 162.587 177 161.22 177H133.5V180.5H162C164.209 180.5 166 182.291 166 184.5V185C166 187.209 164.209 189 162 189H84.5C82.2909 189 80.5 187.209 80.5 185V184.5C80.5 182.291 82.2909 180.5 84.5 180.5H127.5V177Z" fill="white"/>
+<line x1="20.9468" y1="129" x2="321.947" y2="125" stroke="white" stroke-width="8"/>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function() {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					head.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					head.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function(msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			console.log('Live reload enabled.');
+		})();
+	}
+	// ]]>
+</script>
+</svg>

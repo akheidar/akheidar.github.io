@@ -1,0 +1,87 @@
+.container-questions {
+  margin: 3% 5%;
+  position: absolute;
+  top: 3%;
+  transform: translateX(200%);
+  color: #ffffff;
+}
+
+
+.progress-bar {
+  display: none;
+  position: relative;
+  margin: 0;
+  top: 0;
+  width: 0%;
+  height: 4.5px;
+  background-color: #ffffff;
+}
+
+.container-questions .micro-copy {
+  color: #ffffff;
+  font-size: 1.0em;
+  font-weight: 400;
+}
+
+.container-questions .questions .question {
+  position: relative;
+  margin-top: 5%;
+  width: 100%;
+  font-weight: bold;
+  font-size: 2.0em;
+}
+
+.container-questions .questions .question .user-input {
+  position: absolute;
+  top: 11.0em;
+  width: 90%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  color: #ffffff;
+  font-size: 0.75em;
+}
+
+.container-questions .questions .question .user-input::placeholder {
+  color: #ffffff;
+  opacity: 0.8;
+  font-weight: 100;
+}
+
+.container-questions .questions .question .user-input:focus {
+  outline: none;
+}
+
+.container-questions .questions .question .next-btn {
+  display: block;
+  background-color: #ffffff;
+  border: none;
+  font-weight: lighter;
+  font-size: 0.75em;
+  padding: 2% 12%;
+  border-radius: 2.0em;
+  position: absolute;
+  left: 50%;
+  top: 17.0em;
+  transform: translateX(-50%);
+  color: var(--actionBlue);
+  cursor: pointer;
+}
+
+.container-questions .questions .question .next-btn:focus {
+  outline: none;
+}
+
+.q1 {
+  display: block;
+}
+
+.q2 {
+  display: none;
+  transform: translateX(200%);
+}
+
+.q3 {
+  display: none;
+  transform: translateX(200%);
+}

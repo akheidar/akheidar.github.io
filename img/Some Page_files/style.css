@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+  font-family: sans-serif;
+  background-image: url('https://wallpapercave.com/wp/wp2061029.jpg');
+  background-position: top;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+
+header {
+  background-image: linear-gradient(149.37deg, #00D1FF 24.32%, rgba(36, 0, 255, 0.5) 153.54%, rgba(36, 0, 255, 0.5) 153.55%);
+  //background-color: dodgerblue;
+  background-position: top;
+  height: 98vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  //clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 90% 100%, 80% 100%, 70% 100%, 60% 100%, 50% 100%, 40% 100%, 30% 100%, 20% 100%, 10% 100%, 0 100%);
+  animation: shearOverlay;
+  animation-duration: 1.7s;
+  animation-timing-function: ease-out;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+}
+
+.nav {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  padding: 1vw;
+}
+
+.mobileNav {
+  display: none;
+}
+
+nav ul li a {
+  display: block;
+  font-weight: 400;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.5em;
+}
+
+.hero {
+  font-size: 3.5em;
+  color: #ffffff;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: titleAppear;
+  animation-duration: 1.2s;
+  animation-timing-function: ease-out;
+}
+
+
+.login {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+
+.login input {
+  padding: 5%;
+  padding-left: 0;
+  margin-bottom: 10vh;
+  display: block;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #ffffff;
+}
+
+.login input[type="text"] {
+  color: #ffffff;
+}
+
+.login input::placeholder {
+  color: #ffffff;
+  font-size: 1.2em;
+}
+
+.login .sbmt {
+  border: none;
+  color: dodgerblue;
+  padding: 3% 8%;
+  margin-bottom: 0;
+  border-radius: 1.0em;
+  background-color: #ffffff;
+  font-size: 1.2em;
+  position: relative;
+  cursor: pointer;
+  left: 50%;
+  top: 1vh;
+  display: block;
+  transform: translateX(-60%);
+}
+
+.btn {
+  padding: 0.3vh;
+  border-radius: 100%;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  font-size: 2.0em;
+  font-weight: 300;
+  color: #ffffff;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  transform: rotate(45deg);
+}
+
+@keyframes openNav {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes titleAppear {
+   0% {
+     opacity: 0;
+     font-size: 1.0em;
+   }
+
+   100% {
+     opacity: 1.0;
+     font-size: 3.5em;
+
+
+   }
+}
+
+@keyframes shearOverlay {
+  0% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 90% 99%, 80% 100%, 70% 99%, 60% 100%, 50% 99%, 40% 100%, 30% 99%, 20% 100%, 10% 98%, 0 100%);
+  }
+
+  100% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 90% 100%, 80% 100%, 70% 100%, 60% 100%, 50% 100%, 40% 100%, 30% 100%, 20% 100%, 10% 100%, 0 100%);
+  }
+}
+
+@keyframes shapeShift {
+  0% {
+    clip-path: polygon(50% 0, 100% 100%, 100% 100%, 0 100%);
+  }
+
+  100% {
+    clip-path: polygon(0 0, 25% 0, 25% 100%, 0 100%);
+
+  }
+}
+
+@media (max-width: 800px) {
+  .nav {
+    display: block;
+    text-align: center;
+    padding-top: 5vh;
+  }
+
+  nav ul li {
+    display: none;
+  }
+
+  .toggleMobile {
+    display: none;
+  }
+
+  .nav ul li {
+    margin: 2vh;
+  }
+
+  .mobileNav {
+    display: block;
+  }
+
+  .hero {
+    font-size: 2.5em;
+    animation: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero {
+    font-size: 2.0em;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero {
+    font-size: 1.5em;
+  }
+}

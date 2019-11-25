@@ -1,0 +1,135 @@
+/*Keyframes*/
+  /*defaults for browsers without prefix vendors*/
+  /*Animation for the logo and title in login*/
+@keyframes titleAppear {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1.0;
+  }
+}
+
+/*Animation for the water effect*/
+@keyframes shearOverlay {
+  0% {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 90% 99%, 80% 100%, 70% 99%, 60% 100%, 50% 99%, 40% 100%, 30% 99%, 20% 100%, 10% 98%, 0 100%);
+  }
+
+  100% {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 90% 100%, 80% 100%, 70% 100%, 60% 100%, 50% 100%, 40% 100%, 30% 100%, 20% 100%, 10% 100%, 0 100%);
+  }
+}
+
+/*Animation for the screen transition of items*/
+@keyframes screenTransition {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
+/*Animation for the water overlay scaling when logging in*/
+@keyframes moveWater {
+  0% {
+    height: 98%;
+    opacity: 1;
+  }
+
+  100% {
+    height: 0;
+    opacity: 0;
+    clip-path: none;
+  }
+}
+
+
+@keyframes changeBG1 {
+  0% {
+    background-color: rgba(36, 190, 255, 0.5);
+  }
+
+
+  100% {
+  background-color: rgba(23, 116, 255, 1.0);;
+
+  }
+}
+
+@keyframes changeBG2 {
+  0% {
+    background-color: rgba(23, 116, 255, 1.0);
+  }
+
+
+  100% {
+  background-color: rgba(255, 255, 255, 1.0);;
+
+  }
+}
+
+@keyframes questionsTransitionIn {
+  0% {
+    transform: translateX(200%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes questionsTransitionOut {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
+@keyframes progressAppear {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 25%;
+  }
+}
+
+@keyframes progressInc1 {
+  0% {
+    width: 25%;
+  }
+
+  100% {
+    width: 50%;
+  }
+}
+
+@keyframes progressInc2 {
+  0% {
+    width: 50%;
+  }
+
+  100% {
+    width: 75%;
+  }
+}
+
+@keyframes progressInc3 {
+  0% {
+    width: 75%;
+    background-color: #ffffff;
+  }
+
+  100% {
+    width: 100%;
+    background-color: var(--actionBlue);
+  }
+}
