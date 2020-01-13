@@ -7,7 +7,8 @@ var welcomeScreen = [header];
 var questions = document.querySelector(".container-questions");
 var progressBar = document.querySelector(".progress-bar");
 var review = document.querySelector(".container-review");
-
+var submit = document.querySelector(".submit-btn");
+var formSubmitted = document.querySelector(".container-submitted");
 //functions
 //content grabber for question q
 var question = function(q) {
@@ -21,9 +22,9 @@ var nextQ = function(q) {
 
 //function which manages the transition between two questions
 function qTransition(q_before, q_after) {
-  q_before.style.animation = "questionsTransitionOut 0.5s ease-in forwards"
+  q_before.style.animation = "contentTransitionOut 0.5s ease-in forwards"
   setTimeout(function() {q_before.style.display = "none";}, 800);
-  q_after.style.animation = "questionsTransitionIn 0.5s 1.0s forwards";
+  q_after.style.animation = "contentTransitionIn 0.5s 1.0s forwards";
   q_after.style.display = "block";
 }
 
@@ -55,7 +56,7 @@ reportBtn.addEventListener('click', function() {
     var overlay = document.querySelector(".container-welcome");
     overlay.style.animation = "moveWater 0.5s forwards";
     bg.style.animation = "changeBG1 0.5s forwards";
-    questions.style.animation = "questionsTransitionIn 0.5s 0.5s forwards";
+    questions.style.animation = "contentTransitionIn 0.5s 0.5s forwards";
     progressBar.style.display = "block";
     progressTransition(0);
   }, 200);
@@ -76,15 +77,24 @@ nextQ(".q2").addEventListener("click", function() {
 //code for going from completed questions to form submission review
 nextQ(".q3").addEventListener("click", function() {
   var micro = document.querySelector(".container-questions .micro-copy");
-  micro.style.animation = "questionsTransitionOut 0.3s ease-out forwards";
+  micro.style.animation = "contentTransitionOut 0.3s ease-out forwards";
   bg.style.animation = "changeBG2 0.5s 0.2s forwards";
-  question(".q3").style.animation = "questionsTransitionOut 0.5s ease-in forwards";
+  question(".q3").style.animation = "contentTransitionOut 0.5s ease-in forwards";
   progressTransition(3);
   setTimeout(function() {
-    review.style.display = "block";
+    review.style.animation = "contentTransitionIn 0.5s ease-in forwards";
   }, 500);
 });
 
+//code for going to form submitted screen
+submit.addEventListener("click", function() {
+  //progressBar.style.display = "none";
+  review.style.animation = "contentTransitionOut 0.5s ease-out forwards";
+  setTimeout(function() {
+    formSubmitted.style.display = "block";
+    formSubmitted.style.opacity = "1.0";
+  }, 500);
+});
 
 //Get the refresh button
 var refresh = document.querySelector(".refresh-btn");

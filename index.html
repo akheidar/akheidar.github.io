@@ -10,10 +10,11 @@
     <link rel="stylesheet" href="./css/homescreen.css">
     <link rel="stylesheet" href="./css/questions.css">
     <link rel="stylesheet" href="./css/review.css">
+    <link rel="stylesheet" href="/css/submitted.css">
     <link rel="stylesheet" href="./css/animations.css">
     <link rel="stylesheet" href="./css/animations-vendor.css">
   </head>
-
+  
   <body class = "mobileBG">
       <h3>Mobile Device Template by Marvel</h3>
       <button class = "refresh-btn">Reload</button>
@@ -45,7 +46,7 @@
                </div>
 
                <h1 class = "heroText">
-                 Good Morning.
+                 Delta 311
                </h1>
            </div>
 
@@ -71,7 +72,7 @@
 
             <div class="question q3">
                 <p>3. Where in the water column did you find it?</p>
-                <input type="text" name="weed-species" placeholder = "e.g. middle" class = "user-input">
+                <input type="text" name="weed-species" placeholder = "e.g. top" class = "user-input">
                 <button class = "next-btn">Next</button>
               </div>
 
@@ -81,7 +82,7 @@
 
         <!--Review-->
         <div class="container-review">
-            <h3 class = "micro-copy">let's review.</h3>
+            <h3 class = "micro-copy">Let's review.</h3>
             <div class = "questions">
 
               <div class="question">
@@ -101,7 +102,33 @@
 
             </div>
             <button class = "submit-btn">Submit</button>
+        </div>
+
+        <!--Form Submitted-->
+        <div class="container-submitted">
+          <div class="container-main">
+            <div class="sent-icon">
+              <img src="./img/submittedLogo.png" width = "150" height = "150" class="sent-logo">
+              <h1 class = "sent-hero">Sent!</h1>
+            </div>
+              <p class = "sent-copy">
+                Your report has been submitted.
+                Expect at least 3 business days before a response.
+                Thank you.
+              </p>
+              <div class="new-report">
+                <p class = "new-report-copy">
+                  Would you like to file another report?
+                </p>
+                <div class="new-report-options">
+                  <button type="button" name="button" class = "btn btn-yes">Yes</button>
+                  <button type="button" name="button" class = "btn btn-no">No</button>
+                </div>
+              </div>
           </div>
+
+
+        </div>
       </div>
 
     </div>
