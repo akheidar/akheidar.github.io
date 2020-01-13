@@ -1,0 +1,60 @@
+.container-submitted {
+  color: var(--black);
+  text-align: center;
+  display: none;
+  opacity: 0;
+  margin-top: 10%;
+  position: relative;
+}
+
+.container-submitted .container-main {
+
+   width: 100%;
+
+
+}
+
+
+.container-submitted .container-main .sent-icon {
+  padding: 5%;
+
+
+}
+
+.container-submitted .container-main .sent-icon .sent-hero {
+  text-align: center;
+  padding: 5%;
+  font-size: 2.5em;
+  color: var(--successGreen);
+}
+
+.container-submitted .container-main .sent-copy {
+  font-size: 1.5em;
+  text-align: center;
+  padding: 10% 5%;
+}
+
+.container-submitted .container-main .new-report .new-report-copy {
+  color: var(--black);
+  font-size: 1.2em;
+}
+
+.container-submitted .container-main .new-report .new-report-options {
+  margin: 5%;
+  margin-top: 10%;
+}
+
+.container-submitted .container-main .new-report .new-report-options .btn {
+  margin: 0 5%;
+
+  background-color: var(--actionBlue);
+  color: #ffffff;
+  border: none;
+  font-size: 1.5em;
+  padding: 3% 10%;
+  border-radius: 1.0em;
+}
+
+.container-submitted .container-main .new-report .new-report-options .btn:nth-child(2) {
+  background-color: var(--black);
+}

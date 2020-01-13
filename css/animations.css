@@ -72,7 +72,7 @@
   }
 }
 
-@keyframes questionsTransitionIn {
+@keyframes contentTransitionIn {
   0% {
     transform: translateX(200%);
   }
@@ -82,7 +82,7 @@
   }
 }
 
-@keyframes questionsTransitionOut {
+@keyframes contentTransitionOut {
   0% {
     transform: translateX(0);
   }

@@ -3,7 +3,7 @@
     margin: 3% 5%;
     position: absolute;
     top: 3%;
-    display: none;
+    transform: translateX(200%);
 }
 
 .container-review .micro-copy {
@@ -35,8 +35,13 @@
   border-radius: 2.0em;
   position: absolute;
   left: 50%;
+  width: 45%;
   top: 120%;
   transform: translateX(-50%);
   color: #ffffff;
   cursor: pointer;
+}
+
+.container-review .submit-btn:focus {
+  outline: none;
 }
