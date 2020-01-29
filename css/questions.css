@@ -1,3 +1,7 @@
+
+
+
+
 .container-questions {
   margin: 3% 5%;
   position: absolute;
@@ -52,21 +56,38 @@
   outline: none;
 }
 
-.container-questions .questions .question .next-btn {
+ .next-btn {
   display: block;
   background-color: #ffffff;
   border: none;
-  font-weight: lighter;
-  font-size: 0.75em;
-  padding: 2% 12%;
+  font-weight: normal;
+  font-size: 1.5em;
+  padding: 5% 8%;
   border-radius: 2.0em;
   position: absolute;
   left: 50%;
-  width: 45%;
+  width: 58%;
   top: 17.0em;
   transform: translateX(-50%);
   color: var(--actionBlue);
   cursor: pointer;
+}
+
+.container-questions .questions .question .next-btn {
+ display: block;
+ background-color: #ffffff;
+ border: none;
+ font-weight: bold;
+ font-size: 0.85em;
+ padding: 5% 7%;
+ border-radius: 2.0em;
+ position: absolute;
+ left: 50%;
+ width: 58%;
+ top: 20.0em;
+ transform: translateX(-50%);
+ color: var(--actionBlue);
+ cursor: pointer;
 }
 
 .container-questions .questions .question .next-btn:focus {

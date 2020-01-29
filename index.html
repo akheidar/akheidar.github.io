@@ -8,13 +8,15 @@
     <!--custom styles below-->
     <link rel="stylesheet" href="./css/general.css">
     <link rel="stylesheet" href="./css/homescreen.css">
+    <link rel="stylesheet" href="./css/category.css">
+    <link rel="stylesheet" href="./css/location.css">
     <link rel="stylesheet" href="./css/questions.css">
     <link rel="stylesheet" href="./css/review.css">
     <link rel="stylesheet" href="/css/submitted.css">
     <link rel="stylesheet" href="./css/animations.css">
     <link rel="stylesheet" href="./css/animations-vendor.css">
   </head>
-  
+
   <body class = "mobileBG">
       <h3>Mobile Device Template by Marvel</h3>
       <button class = "refresh-btn">Reload</button>
@@ -53,14 +55,65 @@
            <button class = "report-btn">New Report</button>
         </div>
 
+        <!--Type of complaint-->
+        <div class="container-category">
+          <h3 class = "micro-copy">Tell us what happened.</h3>
+          <p>What would you like to report?</p>
+          <div class = "categories">
+            <ul>
+              <li>Navigation Problem</li>
+              <li class = "selected-category">New Aquatic Invasive <br> Plant</li>
+              <li>Other Issue</li>
+            </ul>
+          </div>
+          <div class="begin-report">
+            <button class = "next-btn start-report">Begin Report</button>
+          </div>
+        </div>
+
+        <!--Location of report-->
+        <div class = "container-location">
+          <div class="container-main">
+            <p>Where did this happen?</p>
+            <div class="location-image">
+              <img src="./img/locationGraphic.png" alt="radar-graphic">
+            </div>
+            <div class = "location-copy">
+              <p>
+                Upload a photo, find the location on the map,
+                or we can use your device’s GPS if you’re already at the location.
+              </p>
+            </div>
+          </div>
+          <div class = "location-options">
+            <li>
+              <img src="./img/location-photo-icon.png" alt="photo-icon" width = "51.2" height = "55.2">
+            </li>
+
+            <li>
+              <img src="./img/location-map-icon.png" alt="photo-icon" width = "44.8" height = "61.6">
+            </li>
+
+            <li>
+              <img src="./img/location-gps-icon.png" alt="photo-icon" width = "56" height = "61.6">
+            </li>
+            <br/>
+            <div class="cancel">
+              <p>Cancel</p>
+            </div>
+          </div>
+
+
+        </div>
         <!--questions-->
         <div class="container-questions">
-          <h3 class = "micro-copy">Tell us what happened.</h3>
+
+
           <div class = "questions">
 
             <div class="question q1">
               <p>1. What species of weed is it?</p>
-              <input type="text" name="weed-species" placeholder = "e.g. Hydrilla Verticillata" class = "user-input">
+              <input type="text" name="weed-species" placeholder = "e.g. Water Hyacinth" class = "user-input">
               <button class = "next-btn">Next</button>
             </div>
 
@@ -87,7 +140,7 @@
 
               <div class="question">
                 <p>1. What species of weed is it?</p>
-                <p class = "answer q1Answer">Hydrilla Verticillata</p>
+                <p class = "answer q1Answer">Water Hyacinth</p>
               </div>
 
               <div class="question">
@@ -97,7 +150,7 @@
 
               <div class="question">
                   <p>3. Where in the water column did you find it?</p>
-                  <p class = "answer q1Answer">Mesopelagic</p>
+                  <p class = "answer q1Answer">Top</p>
                 </div>
 
             </div>

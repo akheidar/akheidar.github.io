@@ -98,34 +98,69 @@
   }
 
   100% {
-    width: 25%;
+    width: 14.3%;
   }
 }
 
 @keyframes progressInc1 {
   0% {
-    width: 25%;
+    width: 14.3%;
   }
 
   100% {
-    width: 50%;
+    width: 28.6%;
   }
 }
 
 @keyframes progressInc2 {
   0% {
-    width: 50%;
+    width: 28.6%;
   }
 
   100% {
-    width: 75%;
+    width: 42.9%;
   }
 }
 
 @keyframes progressInc3 {
   0% {
-    width: 75%;
+    width: 42.9%;
+
+  }
+
+  100% {
+    width: 57.2%;
+
+  }
+}
+
+@keyframes progressInc4 {
+  0% {
+    width: 57.2%;
+
+  }
+
+  100% {
+    width: 71.5%;
+
+  }
+}
+
+@keyframes progressInc5 {
+  0% {
+    width: 71.5%;
     background-color: #ffffff;
+  }
+
+  100% {
+    width: 85.8%;
+    background-color: var(--actionBlue);
+  }
+}
+@keyframes progressInc6 {
+  0% {
+    width: 85.8%;
+    background-color: var(--actionBlue);
   }
 
   100% {

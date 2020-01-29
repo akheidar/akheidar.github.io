@@ -1,0 +1,75 @@
+.container-location {
+  margin: 0;
+  position: absolute;
+  top: 3%;
+  transform: translateX(250%);
+  color: #ffffff;
+}
+
+.container-main {
+  margin: 0 5%;
+}
+
+.container-location p {
+  position: relative;
+  margin-top: 5%;
+  width: 100%;
+  font-weight: bold;
+  font-size: 2.5em;
+}
+
+.location-image {
+  margin-top: 20%;
+  margin-left: 1%px;
+}
+
+.location-copy {
+  font-size: 0.50em;
+  margin-top: 3%;
+  margin-bottom: 12%;
+  font-weight: 100;
+}
+
+.location-options {
+  list-style: none;
+  text-align: center;
+}
+
+.location-options li {
+  box-sizing: border-box;
+  padding: 10%;
+  padding-top: 4%;
+  padding-bottom: 0;
+  text-align: center;
+  display: inline-block;
+  margin: 0;
+}
+
+
+
+.container-location .next-btn {
+  margin-top: 7.0em;
+}
+
+.container-location .location-options {
+  width: 100%;
+  margin-top: 10%
+  margin-bottom: 0;
+  height: 100px;
+  background-color: #0066ff;
+}
+
+.container-location .cancel {
+  width: 100%;
+  height: 70px;
+  margin: 0;
+  background-color: #193c55;
+}
+
+.container-location .cancel p {
+  font-size: 1.20em;
+  text-decoration: underline;
+  font-weight: 100;
+  padding: 5%;
+  color: #ffffff;
+}

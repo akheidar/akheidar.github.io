@@ -8,8 +8,13 @@
   --successGreen: #58b287;
 }
 
+.micro-copy {
+  font-size: 1.0em;
+  font-weight: 400;
+}
+
 body {
-  font-family: sans-serif;
+  font-family: 'Calibri', sans-serif;
 }
 
 /*positioning and styling the device emulator*/
